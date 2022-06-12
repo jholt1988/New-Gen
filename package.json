@@ -5,7 +5,7 @@
   "license": "Unlicense",
   "main": "src/profb_client/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --require babel-core/register --recursive"
   },
   "browser": {
     "fs": false

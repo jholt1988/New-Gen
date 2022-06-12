@@ -11,41 +11,41 @@
  *
  */
 
-import ApiClient from './ApiClient';
-import Address from './apiModels/Address';
-import Cart from './apiModels/Cart';
-import CartItems from './apiModels/CartItems';
-import Category from './apiModels/Category';
-import Delivery from './apiModels/Delivery';
-import ErrorModel from './apiModels/ErrorModel';
-import ExtendedErrorModel from './apiModels/ExtendedErrorModel';
-import InlineResponse200 from './apiModels/InlineResponse200';
-import InlineResponse404 from './apiModels/InlineResponse404';
-import Method from './apiModels/Method';
-import Order from './apiModels/Order';
-import OrderItems from './apiModels/OrderItems';
-import Payment from './apiModels/Payment';
-import Product from './apiModels/Product';
-import Status from './apiModels/Status';
-import Type from './apiModels/Type';
-import User from './apiModels/User';
-import UserAddress from './apiModels/UserAddress';
-import Vendor from './apiModels/Vendor';
-import AuthApi from './api_classes/AuthApi';
-import CartApi from './api_classes/CartApi';
-import CheckoutApi from './api_classes/CheckoutApi';
-import OrdersApi from './api_classes/OrdersApi';
-import ProductsApi from './api_classes/ProductsApi';
-import StoreApi from './api_classes/StoreApi';
-import UsersApi from './api_classes/UsersApi';
-import VendorsApi from './api_classes/VendorsApi';
+const ApiClient = require('./ApiClient')
+const Address = require('./apiModels/Address');
+const Cart = require('./apiModels/Cart');
+const CartItems = require('./apiModels/CartItems');
+const Category = require('./apiModels/Category');
+const Delivery = require('./apiModels/Delivery');
+const ErrorModel = require('./apiModels/ErrorModel');
+const ExtendedErrorModel = require('./apiModels/ExtendedErrorModel');
+const InlineResponse200 = require('./apiModels/InlineResponse200');
+const InlineResponse404 = require('./apiModels/InlineResponse404');
+const Method = require('./apiModels/Method');
+const Order = require('./apiModels/Order');
+const OrderItems = require('./apiModels/OrderItems');
+const Payment = require('./apiModels/Payment');
+const Product = require('./apiModels/Product');
+const Status = require('./apiModels/Status');
+const Type = require('./apiModels/Type');
+const User = require('./apiModels/User');
+const UserAddress = require('./apiModels/UserAddress');
+const Vendor = require('./apiModels/Vendor');
+const AuthApi = require('./api_classes/AuthApi');
+const CartApi = require('./api_classes/CartApi');
+const CheckoutApi = require('./api_classes/CheckoutApi');
+const OrdersApi = require('./api_classes/OrdersApi');
+const ProductsApi = require('./api_classes/ProductsApi');
+const StoreApi = require('./api_classes/StoreApi');
+const UsersApi = require('./api_classes/UsersApi');
+const VendorsApi = require('./api_classes/VendorsApi');
 
 /**
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var profbent = require('profb_client/index'); // See note below*.
+* var profbent = = require('profb_client/index'); // See note below*.
 * var xxxSvc = new profbent.XxxApi(); // Allocate the API class we're going to use.
 * var yyyModel = new profbent.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
@@ -53,7 +53,7 @@ import VendorsApi from './api_classes/VendorsApi';
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
 * ...
 * </pre>
-* <em>*NOTE: For a top-level AMD script, use require(['profb_client/index'], function(){...})
+* <em>*NOTE: For a top-level AMD script, use = require(['profb_client/index'], function(){...})
 * and put the application logic within the callback function.</em>
 * </p>
 * <p>
