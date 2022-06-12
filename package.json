@@ -1,6 +1,6 @@
 {
   "name": "profb-js-client",
-  "version": "1.67",
+  "version": "1.6.7",
   "description": "",
   "license": "Unlicense",
   "main": "src/profb_client/index.js",
